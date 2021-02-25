@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Match"
+    android:orientation="vertical"
+    tools:context="kolibri.example.kolibri.CitiesActivity">
+
+    <TextView
+        android:id="@+id/cities"
+        style="@style/TextHeader"
+        android:gravity="center"
+        android:text="Выберите город: "
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_cities"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_mercury"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/cities"/>
+
+    <ListView
+        android:id="@+id/list_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_cities" />
+
+</LinearLayout>

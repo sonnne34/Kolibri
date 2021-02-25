@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWrap"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        style="@style/MatchWrap"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            style="@style/MatchWrap">
+
+            <TextView
+                android:id="@+id/textViewDishName"
+                style="@style/TextHeaderBody"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/textViewCost"
+                android:text="Название" />
+
+            <TextView
+                android:id="@+id/textViewCost"
+                style="@style/TextBody"
+                android:textSize="18sp"
+                android:padding="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/okrugl"
+                android:text="Стоимость" />
+
+            <TextView
+                android:id="@+id/textViewGoodsDescription"
+                style="@style/TextBody"
+                android:textSize="13sp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewDishName"
+                android:text="Описание товара" />
+
+            <ImageView
+                android:id="@+id/imageViewPictureDish"
+                style="@style/ImageBody"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/textViewGoodsDescription"
+                android:background="@drawable/background_menu"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/checkbox_items"
+        android:layout_width="7dp"
+        android:layout_height="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/card_view"
+        android:background="@drawable/okrugl_checkbox" />
+
+</RelativeLayout>

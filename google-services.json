@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "847385123229",
+    "firebase_url": "https://kalibri-845e2.firebaseio.com",
+    "project_id": "kalibri-845e2",
+    "storage_bucket": "kalibri-845e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847385123229:android:bd6c040909267d78",
+        "android_client_info": {
+          "package_name": "com.example.kalibri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847385123229-8aefdu1q9rb3edilfhmug811lvj07f9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kalibri",
+            "certificate_hash": "24593a853f77091fed1ec9454ebea4d771bf365d"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4AgKB3k0o5dn5KQPS9YWgLLaQcYRlcV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847385123229-sha715c1fa7geiangdabhbj3p137bblp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

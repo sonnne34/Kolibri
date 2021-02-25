@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchWrap"
+    android:layout_margin="4dp">
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/Wrap"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            style="@style/Wrap"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imagePicture"
+                style="@style/ImageBody"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/background_rest"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textRestorationName"
+                style="@style/TextHeaderBody"
+                android:layout_below="@+id/imagePicture"
+                android:text="Название"
+                tools:ignore="MissingConstraints"/>
+
+            <ImageView
+                android:id="@+id/icon_textTimeDelivery"
+                style="@style/ImageIcon"
+                android:layout_marginTop="7dp"
+                android:layout_toStartOf="@+id/textTimeDelivery"
+                android:layout_below="@+id/imagePicture"
+                android:background="@drawable/icon_delivery_time" />
+
+            <TextView
+                android:id="@+id/textTimeDelivery"
+                style="@style/TextBody"
+                android:layout_marginTop="7dp"
+                android:paddingEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/imagePicture"
+                android:text="время доставки" />
+
+            <ImageView
+                android:id="@+id/icon_text_sum_free_item"
+                style="@style/ImageIcon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/textRestorationName"
+                android:background="@drawable/icon_delivery_sum"/>
+
+            <TextView
+                android:id="@+id/text_sum_free_item"
+                style="@style/TextBody"
+                android:paddingBottom="3dp"
+                android:layout_below="@+id/textRestorationName"
+                android:layout_toEndOf="@+id/icon_text_sum_free_item"
+                android:text="от 600руб бесплатно" />
+
+            <ImageView
+                android:id="@+id/icon_text_time_work_item"
+                style="@style/ImageIcon.min"
+                android:layout_marginTop="3dp"
+                android:layout_toStartOf="@+id/text_time_start_work_item"
+                android:layout_below="@+id/textRestorationName"
+                android:background="@drawable/icon_time"/>
+
+            <TextView
+                android:id="@+id/text_time_start_work_item"
+                style="@style/TextBody"
+                android:layout_toStartOf="@+id/text_end_time_work_item"
+                android:layout_below="@+id/textRestorationName"
+                android:text="с ..." />
+
+            <TextView
+                android:id="@+id/text_end_time_work_item"
+                style="@style/TextBody"
+                android:layout_marginStart="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textRestorationName"
+                android:text=" до ..."/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

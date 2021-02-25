@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.truizlop.sectionedrecyclerview:library:1.2.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6df2b4c9c6415d7b4706b944b6f9427/jetified-library-1.2.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/Desktop/Sushi/app/gradle/caches/transforms-2/files-2.1/237e92042311bf7055e28d6f89ae5942/jetified-library-1.2.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6df2b4c9c6415d7b4706b944b6f9427/jetified-library-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6df2b4c9c6415d7b4706b944b6f9427/jetified-library-1.2.0/res" />
+      <root url="file://$USER_HOME$/Desktop/Sushi/app/gradle/caches/transforms-2/files-2.1/237e92042311bf7055e28d6f89ae5942/jetified-library-1.2.0/res" />
+      <root url="file://$USER_HOME$/Desktop/Sushi/app/gradle/caches/transforms-2/files-2.1/237e92042311bf7055e28d6f89ae5942/jetified-library-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Desktop/Sushi/app/gradle/caches/transforms-2/files-2.1/237e92042311bf7055e28d6f89ae5942/jetified-library-1.2.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Desktop/Sushi/app/gradle/caches/modules-2/files-2.1/com.truizlop.sectionedrecyclerview/library/1.2.0/40966c77252bf802562bbe6c90fe1f37b443f280/library-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Desktop/Sushi/app/gradle/caches/modules-2/files-2.1/com.truizlop.sectionedrecyclerview/library/1.2.0/ac7437990f22834ff3af2f38a649263f4d83695f/library-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/counter_basket"
+        style="@style/TextBody"
+        android:padding="2dp"
+        android:layout_centerVertical="true"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/icon_counter_basket"
+        style="@style/TextBody"
+        android:padding="2dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/counter_basket"
+        android:text="x" />
+
+    <TextView
+        android:id="@+id/names_basket"
+        style="@style/TextBody"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/icon_counter_basket"
+        android:layout_toLeftOf="@+id/count_basket"
+        android:layout_marginEnd="7dp"
+        android:layout_centerVertical="true"
+        android:text="Название блюда"/>
+
+    <TextView
+        android:id="@+id/count_basket"
+        style="@style/TextBody"
+        android:padding="2dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="цена" />
+
+</RelativeLayout>

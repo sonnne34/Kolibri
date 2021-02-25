@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Match"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/MatchWrap">
+
+        <ImageButton
+            android:id="@+id/menu_button_person"
+            android:visibility="gone"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:onClick="menu_person"
+            android:background="@drawable/menu_icon"/>
+
+    <TextView
+            android:id="@+id/title_person_data"
+            style="@style/TextHeader"
+            android:layout_width="wrap_content"
+            android:text="@string/title_person_data" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_mercury"/>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/kod_phone_person_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text=" +7 " />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_Phone"
+            style="@style/MatchWrap"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/phone_person_data"
+                style="@style/MatchWrap"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:imeOptions="actionNext"
+                android:hint="Телефон" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_Name"
+        style="@style/MatchWrap"
+        app:errorEnabled="true">
+
+        <EditText
+            android:id="@+id/name_person_date"
+            style="@style/MatchWrap"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:hint="Имя" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/comment_person_data"
+        style="@style/MatchWrap"
+        android:gravity="bottom"
+        android:inputType="text"
+        android:lines="3"
+        android:hint="Комментарий к заказу"/>
+
+    <RelativeLayout
+        style="@style/MatchWrap">
+
+        <Button
+            android:id="@+id/continue_person_data"
+            style="@style/ButtonCeep"
+            android:onClick="keepBB"
+            android:text="Далее" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+

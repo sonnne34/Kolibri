@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityMainLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kolibri.example.kolibri.MainActivity"
+    style="@style/Match"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        style="@style/HeaderWidthHeight"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/button_option"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:onClick="openOption"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/option" />
+
+        <Button
+            android:id="@+id/citiesButton"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            style="@style/TextHeader"
+            android:layout_width="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="citiesButton"
+            android:text="Город" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/relative_promo_kateg"
+        style="@style/Match"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            style="@style/MatchWrap"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:background="@color/transparent">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                style="@style/MatchWrap"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    style="@style/Match"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_items_promo_mainactivity"
+                        style="@style/MatchWrap"
+                        android:layout_marginTop="3dp"
+                        android:orientation="vertical">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_items_category_mainactivity"
+                        style="@style/MatchWrap"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movies_list"
+            style="@style/MatchWrap"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:id="@+id/registration_basket_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:onClick="BasketRelativOnClickMain">
+
+        <TextView
+            android:id="@+id/name_restaurant_order"
+            style="@style/Wrap"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:text="Ресторан"/>
+
+        <TextView
+            android:id="@+id/score_restaurant_order"
+            style="@style/TextBody"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="Сумма"/>
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

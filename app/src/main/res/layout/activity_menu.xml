@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Match"
+    tools:context="kolibri.example.kolibri.MenuActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_menuactivity"
+        style="@style/MatchWrap"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/name_restaurant_menu"
+        style="@style/TextHeader"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/recycler"
+        android:text="Название ресторана" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_items_category_menuactivity"
+        style="@style/MatchWrap"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/basket_relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/layout_menuactivity"
+        tools:ignore="MissingConstraints">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageButton
+        android:id="@+id/round_button_menuactiviti"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/menuontwo2"
+        android:onClick="categoryRoundButtonOnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/basket_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="15dp"
+        android:onClick="BasketRelativOnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/text_basket_basket"
+            style="@style/Basket"
+            android:background="@drawable/okrugl_basket"
+            android:text="Корзина"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_cost_basket"
+            style="@style/TextBody"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="35dp"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

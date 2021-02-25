@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kalibri"
+    tools:ignore="MissingVersion">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation"
+        android:icon="@mipmap/icf_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icf_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+        <activity android:name="kolibri.example.kolibri.BasketActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="kolibri.example.kolibri.Registration.AddressActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <!--                    android:windowSoftInputMode="stateAlwaysVisible" ></activity>  //"stateVisible" - отображение клавиатуры при загрузке активити-->
+        <activity android:name="kolibri.example.kolibri.Registration.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="kolibri.example.kolibri.Registration.PersonActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible" />
+        <!--                    android:windowSoftInputMode="stateAlwaysVisible" ></activity>  //"stateVisible" - отображение клавиатуры при загрузке активити-->
+        <activity android:name="kolibri.example.kolibri.Registration.TotalActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="kolibri.example.kolibri.Main2Activity.OptionActivity"
+            android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Translucent"/>
+
+        <activity android:name="kolibri.example.kolibri.CitiesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="kolibri.example.kolibri.MenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="kolibri.example.kolibri.MainActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

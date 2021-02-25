@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_home_black_24dp" />
+    <drawable name="ic_dashboard_black_24dp" />
+    <drawable name="ic_notifications_black_24dp" />
+</resources>

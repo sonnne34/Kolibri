@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Wrap"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/text_items_category"
+        style="@style/TextBody2"
+        android:layout_gravity="center"
+        android:padding="7dp"
+        android:background="@drawable/okrugl"
+        android:onClick="categoryMenuButtonOnClick"
+        android:text="категория" />
+
+</LinearLayout>

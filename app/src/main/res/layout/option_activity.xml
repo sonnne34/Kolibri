@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:background="@color/my_colorTwo"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    android:layout_gravity="left">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/option_imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/birdicon_option"/>
+
+        <TextView
+            android:id="@+id/option_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/option_imageView"
+            style="@style/TextHeader"
+            android:textColor="@color/my_colorTwo"
+            android:paddingLeft="7dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="@string/nav_header_title"/>
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:onClick="closeOption"
+            android:background="@drawable/close_option"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/option_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        style="@style/TextHeaderBody2"
+        android:textStyle="italic"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="5dp"
+        android:text="По вопросам сотрудничества свяжитесь c нами:" />
+
+    <TextView
+        android:id="@+id/option_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        style="@style/TextHeaderBody2"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="5dp"
+        android:textStyle="italic"
+        android:textIsSelectable="true"
+        android:text="@string/nav_header_subtitle" />
+
+    <TextView
+        android:id="@+id/option_textView_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:textStyle="italic"
+        style="@style/TextHeaderBody2"
+        android:paddingLeft="5dp"
+        android:textIsSelectable="true"
+        android:text="@string/nav_header_subtitle_tel" />
+
+
+</LinearLayout>
