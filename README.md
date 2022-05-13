@@ -3,7 +3,8 @@
  Food delivery service
  
  Сервис по доставке еды на дом
- ![Kolibri1](https://user-images.githubusercontent.com/60262104/168298218-cbe99b95-7db7-4ea2-bc88-a494d900b6c6.png)
-![Kolibri2](https://user-images.githubusercontent.com/60262104/168298242-6b8396e2-1104-4985-9aba-85855830e28c.png)
-![Kolibri3](https://user-images.githubusercontent.com/60262104/168298264-2013e4cf-546a-4d82-a5af-d897057190a4.png)
-![Kolibri4](https://user-images.githubusercontent.com/60262104/168298271-d241995c-e3b4-4389-9b08-8607f021561f.png)
+
+![Kolibri1-min](https://user-images.githubusercontent.com/60262104/168298914-b3cc4564-1a87-4d85-a6ab-5f33b3178ec8.png)
+![Kolibri2-min](https://user-images.githubusercontent.com/60262104/168298899-53cd5a9c-6970-4f56-978f-a4b73e9cd267.png)
+![Kolibri3-min](https://user-images.githubusercontent.com/60262104/168298905-f32b4b60-b961-4973-bef2-5c02c988cfff.png)
+![Kolibri4-min](https://user-images.githubusercontent.com/60262104/168298913-3b72c276-3d93-4d03-8c33-1f06dde24ada.png)
